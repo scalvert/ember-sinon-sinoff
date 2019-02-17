@@ -1,7 +1,7 @@
-# ember-sinon-sandbox
+# ember-sinon-sinoff
 
-![Build Status](https://api.travis-ci.org/scalvert/ember-sinon-sandbox.svg?branch=master)
-[![npm version](https://badge.fury.io/js/ember-sinon-sandbox.svg)](https://badge.fury.io/js/ember-sinon-sandbox)
+![Build Status](https://api.travis-ci.org/scalvert/ember-sinon-sinoff.svg?branch=master)
+[![npm version](https://badge.fury.io/js/ember-sinon-sinoff.svg)](https://badge.fury.io/js/ember-sinon-sinoff)
 
 This addon adds automatic sandboxing of sinon to your QUnit tests. This ensures that sinon is correctly isolated and doesn't leak state between test executions.
 
@@ -10,12 +10,12 @@ This addon adds automatic sandboxing of sinon to your QUnit tests. This ensures 
 Run:
 
 ```
-ember install ember-sinon-sandbox
+ember install ember-sinon-sinoff
 ```
 
 ## Usage
 
-The `ember-sinon-sandbox` addon supports two different API versions:
+The `ember-sinon-sinoff` addon supports two different API versions:
 
 1. The classic API, which automatically wires up sandbox creation and restoration to `QUnit.testStart` and `QUnit.testDone` respectively
 1. The new QUnit hooks API, which takes a `hooks` object and wires up sandbox creation and restoration to `beforeEach` and `afterEach` of the module.
@@ -25,11 +25,11 @@ The `ember-sinon-sandbox` addon supports two different API versions:
 To use, import the setup method from within your `tests/test-helper.js` file and execute it.
 
 ```js
-import setupSinonSandbox from 'ember-sinon-sandbox/test-support/setup-global-sinon-sandbox';
+import setupSinonSinoff from 'ember-sinon-sinoff/test-support/setup-global-sinon-sinoff';
 
 ...
 
-setupSinonSandbox();
+setupSinonSinoff();
 ```
 
 This will automatically wire-up the sandbox `sinon.sandbox.create` and `sandbox.restore` methods to QUnit `testStart` and `testDone` respectively.
@@ -39,12 +39,12 @@ This will automatically wire-up the sandbox `sinon.sandbox.create` and `sandbox.
 To use, import the setup method from within your test file and execute it.
 
 ```js
-import { setupSinonSandbox } from 'ember-sinon-sandbox/test-support';
+import { setupSinonSinoff } from 'ember-sinon-sinoff/test-support';
 
 ...
 
 module('my module', function(hooks) {
-  setupSinonSandbox(hooks);
+  setupSinonSinoff(hooks);
 
   test('my test', function(assert) {
     ...
@@ -70,7 +70,7 @@ Both the global sinon object and the `this.sandbox` convenience property point t
 
 ### Incremental Migration
 
-To ease the path to migrate to using `ember-sinon-sandbox`'s version of a fully sandboxed sinon, the sandbox that's provided includes a `create` method, which returns the same instance of the sandbox referenced by `this.sandbox`. This allows you to incrementally remove usages of sandboxing within your application.
+To ease the path to migrate to using `ember-sinon-sinoff`'s version of a fully sandboxed sinon, the sandbox that's provided includes a `create` method, which returns the same instance of the sandbox referenced by `this.sandbox`. This allows you to incrementally remove usages of sandboxing within your application.
 
 ```js
 test('another equally important test', function(assert) {
@@ -84,8 +84,8 @@ test('another equally important test', function(assert) {
 
 ### Installation
 
-- `git clone git@github.com:scalvert/ember-sinon-sandbox.git`
-- `cd ember-sinon-sandbox`
+- `git clone git@github.com:scalvert/ember-sinon-sinoff.git`
+- `cd ember-sinon-sinoff`
 - `yarn`
 
 ### Running Tests
