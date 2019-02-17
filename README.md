@@ -1,6 +1,6 @@
 # ember-sinon-sinoff
 
-![Build Status](https://api.travis-ci.org/scalvert/ember-sinon-sinoff.svg?branch=master)
+![Build Status](https://travis-ci.org/scalvert/ember-sinon-sinoff.svg?branch=master)
 [![npm version](https://badge.fury.io/js/ember-sinon-sinoff.svg)](https://badge.fury.io/js/ember-sinon-sinoff)
 
 This addon adds automatic sandboxing of sinon to your QUnit tests. This ensures that sinon is correctly isolated and doesn't leak state between test executions.
