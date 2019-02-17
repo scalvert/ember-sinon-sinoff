@@ -1,4 +1,4 @@
-import { createSandbox, restoreSandbox } from './sinon-sandbox';
+import { createSandbox, restoreSandbox } from './sinon-sinoff';
 
 /**
  * Allows for creating and restoring a sinon sandbox per test. Uses the *new*
@@ -9,7 +9,7 @@ import { createSandbox, restoreSandbox } from './sinon-sandbox';
  * @param {Object} hooks The QUnit hooks object.
  * @public
  */
-export default function setupSinonSandbox(hooks) {
+export default function setupSinonSinoff(hooks) {
   hooks.beforeEach(createSandbox);
   hooks.afterEach(restoreSandbox);
 }
