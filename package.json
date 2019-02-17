@@ -1,7 +1,7 @@
 {
-  "name": "ember-sinon-sandbox",
+  "name": "ember-sinon-sinoff",
   "version": "2.0.2",
-  "description": "Ember addon for ensuring sinon runs isolated in a sandbox for each test.",
+  "description": "An Ember addon that automatically restores sinon after each test.",
   "keywords": [
     "ember-addon"
   ],

@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
-import setupSinonSandbox from 'ember-sinon-sandbox/test-support/setup-sinon-sandbox';
+import setupSinonSinoff from 'ember-sinon-sinoff/test-support/setup-sinon-sinoff';
 import {
   createSandbox,
   restoreSandbox,
-} from 'ember-sinon-sandbox/test-support/sinon-sandbox';
+} from 'ember-sinon-sinoff/test-support/sinon-sinoff';
 
-module('Unit | ember-sinon-sandbox | With global access', function() {
+module('Unit | ember-sinon-sinoff | With global access', function() {
   test(`configuring setup/restore`, function(assert) {
     assert.expect(4);
 
@@ -24,17 +24,17 @@ module('Unit | ember-sinon-sandbox | With global access', function() {
       },
     };
 
-    setupSinonSandbox(hooks);
+    setupSinonSinoff(hooks);
 
     assert.ok(beforeEachCalled, 'hooks.beforeEach is called');
     assert.ok(afterEachCalled, 'hooks.afterEach is called');
   });
 });
 
-module('Unit | ember-sinon-sandbox | Validates helper with hooks', function(
+module('Unit | ember-sinon-sinoff | Validates helper with hooks', function(
   hooks
 ) {
-  setupSinonSandbox(hooks);
+  setupSinonSinoff(hooks);
 
   hooks.beforeEach(function(assert) {
     assert.ok(this.sandbox);

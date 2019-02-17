@@ -2,11 +2,11 @@ import { module, test } from 'qunit';
 import {
   createSandbox,
   restoreSandbox,
-} from 'ember-sinon-sandbox/test-support/sinon-sandbox';
+} from 'ember-sinon-sinoff/test-support/sinon-sinoff';
 
 let previousSandbox;
 
-module(`Unit | ember-sinon-sandbox`, function() {
+module(`Unit | ember-sinon-sinoff`, function() {
   test('calling `sinon.sandbox.restore()` can be called explicitly and via `restoreSandbox`', function(assert) {
     assert.expect(2);
 
