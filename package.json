@@ -1,6 +1,6 @@
 {
   "name": "ember-sinon-sinoff",
-  "version": "2.0.2",
+  "version": "1.0.0",
   "description": "An Ember addon that automatically restores sinon after each test.",
   "keywords": [
     "ember-addon"
