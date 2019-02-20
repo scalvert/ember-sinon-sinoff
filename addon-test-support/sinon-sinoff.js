@@ -52,14 +52,14 @@ export function restoreSandbox() {
 function patchUseFakeTimers(sandbox) {
   let originalUseFakeTimers = sandbox.useFakeTimers;
 
-  sandbox.useFakeTimers = function(...args) {
+  sandbox.useFakeTimers = function() {
     if (clockToRestore) {
       throw new Error(
         "You called sinon's useFakeTimers multiple times within the same test. This can result in unknown behavior."
       );
     }
 
-    let clock = originalUseFakeTimers(...args);
+    let clock = originalUseFakeTimers.apply(sandbox, arguments);
 
     clockToRestore = clock;
 
