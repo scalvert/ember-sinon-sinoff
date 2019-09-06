@@ -1,5 +1,8 @@
 # ember-sinon-sinoff
 
+| **This package has been deprecated**: Please use [ember-sinon-qunit](https://jhawk.co/ember-sinon-qunit). |
+| --- |
+
 [![Build Status](https://travis-ci.org/scalvert/ember-sinon-sinoff.svg?branch=master)](https://travis-ci.org/scalvert/ember-sinon-sinoff)
 [![npm version](https://badge.fury.io/js/ember-sinon-sinoff.svg)](https://badge.fury.io/js/ember-sinon-sinoff)
 
