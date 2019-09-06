@@ -1,6 +1,6 @@
 # ember-sinon-sinoff
 
-| **This package has been deprecated**: Please use [ember-sinon-qunit](https://jhawk.co/ember-sinon-qunit). |
+| **This package has been deprecated**: Please use [ember-sinon-qunit](https://jhawk.co/ember-sinon-qunit). Read this [post](https://www.jordanhawker.com/p/187541610821) to learn more. |
 | --- |
 
 [![Build Status](https://travis-ci.org/scalvert/ember-sinon-sinoff.svg?branch=master)](https://travis-ci.org/scalvert/ember-sinon-sinoff)
